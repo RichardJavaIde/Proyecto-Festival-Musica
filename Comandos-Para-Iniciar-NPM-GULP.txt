@@ -1,0 +1,48 @@
+npm init => inicia el archivo package.json donde se deglusan las dependecias del proyecto.
+Eje:
+"name": "festivalmusica_inicio1",
+  "version": "1.0.0",
+  "description": "Proyecto con Sass y Gulp",
+  "main": "index.js",
+"author": "Richard Duran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichardJavaIde/Proyecto-Festival-Musica/issues"
+"keywords": [
+    "SASS",
+    "GULP"
+  ],
+
+npm install sass => instalamos SASS pero tambien creamos la carpera src y dendro de esta scss con el archivo app.scss
+
+npm run sass => este es para ejecutar el script que esta el package.json el que se llama sass.
+
+"scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "tarea": "gulp tarea"
+  },
+
+npm i -D gulp => este es para instalar GULP para desarollo y de paso hay que crear el archivo gulpfile.js en la raiz del proyecto.
+
+npx gulp tarea => este es para ejecutar funciones que estan detro del archivo gulpfile.js
+
+function tarea(done) {
+  console.log("mi primer tarea");
+
+  done();
+}
+
+npm run tarea = este es para ejecutar scripts que estan dentro de package.json pero (tarea) pertenese a gulp entonses
+de esta aforma llamamos un achivo de gulp con el archivo package.json.
+
+"scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "tarea": "gulp tarea"
+  },
+
+npm i -D gulp-sass => este es un plugin para conectar gulp con sass
+const sass = require("gulp-sass")(require("sass"));
+
+*******
+npm run dev => si quieres llamar funciones de gulp tienes que escribirla en scripts o usa npx gulp dev
+*******

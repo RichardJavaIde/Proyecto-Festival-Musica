@@ -1,0 +1,34 @@
+{
+  "name": "festivalmusica_inicio1",
+  "version": "1.0.0",
+  "description": "Proyecto con Sass y Gulp",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch src/scss:build/css",
+    "tarea": "gulp tarea",
+    "css": "gulp css",
+    "dev": "gulp dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RichardJavaIde/Proyecto-Festival-Musica.git"
+  },
+  "keywords": [
+    "SASS",
+    "GULP"
+  ],
+  "author": "Richard Duran",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RichardJavaIde/Proyecto-Festival-Musica/issues"
+  },
+  "homepage": "https://github.com/RichardJavaIde/Proyecto-Festival-Musica#readme",
+  "dependencies": {
+    "sass": "^1.62.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-sass": "^5.1.0"
+  }
+}
