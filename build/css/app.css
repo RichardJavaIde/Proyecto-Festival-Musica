@@ -360,14 +360,42 @@ h3 {
 
 .header {
   background-color: #4cb8b3;
+  padding: 2rem;
 }
 .header h1 {
+  text-align: center;
   color: #ffffff;
 }
+@media (min-width: 768px) {
+  .header h1 {
+    margin: 0;
+  }
+}
+@media (min-width: 768px) {
+  .header .contenedor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
+@media (min-width: 768px) {
+  .navegacion-principal {
+    display: flex;
+    gap: 1rem;
+  }
+}
 .navegacion-principal a {
+  display: block;
+  text-align: center;
+  margin-bottom: 1.5rem;
   color: #ffffff;
   font-size: 2.8rem;
+}
+@media (min-width: 768px) {
+  .navegacion-principal a {
+    margin: 0;
+  }
 }
 .navegacion-principal a:hover {
   color: #fef46d;
