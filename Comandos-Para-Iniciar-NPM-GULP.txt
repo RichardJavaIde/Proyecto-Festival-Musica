@@ -51,3 +51,8 @@ npm run dev => si quieres llamar funciones de gulp tienes que escribirla en scri
 npm i --save-dev gulp-plumber ==> dependencia // este plugin es para que no detenga la ejecucion del watch cuando alga un eror y muestre el eror.
 
 npm i --save-dev gulp-webp ==> funcion para convertir imagenes a webp
+
+npm i --save-dev gulp-imagemin@7.1.0 ==> este es para aligerar las imanegenes jpg y png es te va a compallado de otro plugin llamado cache.
+npm i --save-dev gulp-cache
+
+npm i --save-dev gulp-avif ==> este es para aligerar las imanegenes a formato avif
