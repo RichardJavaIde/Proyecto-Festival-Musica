@@ -41,14 +41,22 @@ function versionavif(done) {
     .pipe(dest("build/img"));
   done();
 }
+function javascript(done) {
+  src("src/js/**/*.js") //
+    .pipe(dest("build/js"));
+  done();
+}
+
 function dev(done) {
   watch("src/scss/**/*.scss", css);
+  watch("src/js/**/*.js", javascript);
 
   done();
 }
 
 exports.css = css; //es para llamar a ejecutar la funcion
+exports.js = javascript; //es para llamar a ejecutar la funcion
 exports.imagenes = imagenes;
 exports.versionWebp = versionWebp; //es para llamar a ejecutar la funcion
 exports.versionavif = versionavif; //es para llamar a ejecutar la funcion
-exports.dev = parallel(versionWebp, versionavif, imagenes, dev); //es para llamar a ejecutar la funcion
+exports.dev = parallel(versionWebp, versionavif, imagenes, javascript, dev); //es para llamar a ejecutar la funcion
