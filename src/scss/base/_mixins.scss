@@ -21,7 +21,7 @@
   }
 }
 
-@mixin grip($colomnas, $separacion) {
+@mixin grid($colomnas, $separacion) {
   display: grid;
   grid-template-columns: repeat($colomnas, 1fr);
   gap: $separacion;

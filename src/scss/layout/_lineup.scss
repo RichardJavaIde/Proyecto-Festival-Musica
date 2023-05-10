@@ -17,7 +17,7 @@
 
 .escenarios-contenedor {
   @include m.tablet {
-    @include m.grip(2, 5rem);
+    @include m.grid(2, 5rem);
   }
   p {
     color: v.$negro;
