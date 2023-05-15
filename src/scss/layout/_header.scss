@@ -5,6 +5,16 @@
   background-color: v.$verde;
   padding: 2rem;
 
+  @include m.tablet {
+    &.fijo {
+      left: 0;
+      top: 0;
+      position: fixed;
+      width: 100%;
+      box-shadow: 0.3rem 0.3rem 0.3rem #333;
+    }
+  }
+
   h1 {
     text-align: center;
     color: v.$blanco;
