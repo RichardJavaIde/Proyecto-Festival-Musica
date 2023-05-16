@@ -56,3 +56,16 @@ npm i --save-dev gulp-imagemin@7.1.0 ==> este es para aligerar las imanegenes jp
 npm i --save-dev gulp-cache
 
 npm i --save-dev gulp-avif ==> este es para aligerar las imanegenes a formato avif
+
+npm i --save-dev cssnano autoprefixer postcss gulp-postcss
+
+autoprefixer hace que nuestro codigo css funcione bien en todos los navegadores.
+cssnano comprime nuestro codigo css para que en el navegador sea mas rapido.
+gulp-postcss hace algunas transformaciones atraves de autoprefixer cssnano.
+
+
+npm i --save-dev gulp-sourcemaps
+
+npm i --save-dev gulp-terser-js
+
+
